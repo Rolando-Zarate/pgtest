@@ -21,6 +21,7 @@ def main():
             test.loopc = False
             main()
         except Exception as error:
+            test.itern = 1
             print("Failed, try again.")
             main()
     else:
