@@ -1,5 +1,6 @@
 import threading
 import test
+import os
 def load(fps):
     print("Loading...")
     test.fps = fps
@@ -25,6 +26,10 @@ def main():
     else:
         main()
 if __name__ == "__main__":
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
     print("pgtest")
     print("use the command 'start' please")
     main()
